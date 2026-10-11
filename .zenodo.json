@@ -1,0 +1,32 @@
+{
+  "upload_type": "dataset",
+  "title": "asmsense-data: training and evaluation data for naming functions in stripped x86-64 binaries",
+  "description": "<p>Chat-format training, validation and test data for asmsense, a small language model that names and describes functions in stripped x86-64 binaries. Inputs are anonymized assembly (Mach-O, clang, -O0 to -Os), call context and, from v6, Ghidra decompilation; targets are the original function name plus one-sentence English and Turkish descriptions. The split is project-level and the test projects are little-known and recent to limit memorization. Known exception: test project snkv vendors the training project sqlite (217 of 2,000 fixed test rows). Each row keeps the license of the C project it was compiled from; only permissively licensed projects (MIT, BSD, ISC, zlib, Apache-2.0, public domain) are included.</p>",
+  "creators": [
+    {
+      "name": "krxi"
+    }
+  ],
+  "keywords": [
+    "reverse engineering",
+    "binary analysis",
+    "function name recovery",
+    "stripped binaries",
+    "decompilation",
+    "dataset",
+    "large language models"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/krxi/asmsense",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/krxi123/asmsense",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "language": "eng"
+}

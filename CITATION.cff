@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+title: "asmsense-data: training and evaluation data for naming functions in stripped x86-64 binaries"
+type: dataset
+authors:
+  - alias: krxi
+repository: "https://github.com/krxi/asmsense-data"
+repository-code: "https://github.com/krxi/asmsense"
+url: "https://huggingface.co/datasets/krxi123/asmsense"
+abstract: >-
+  Chat-format training, validation and test data for asmsense. Inputs are
+  anonymized x86-64 assembly (Mach-O, clang, -O0 to -Os), call context and, from
+  v6, Ghidra decompilation; targets are the original function name plus
+  one-sentence English and Turkish descriptions. The split is project-level and
+  test projects are little-known and recent. Rows keep the licenses of the
+  permissively licensed C projects they were compiled from.
+keywords:
+  - reverse engineering
+  - binary analysis
+  - function name recovery
+  - stripped binaries
+  - dataset
